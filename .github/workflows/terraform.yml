@@ -5,6 +5,10 @@ on:
     branches:
       - master
 
+permissions:
+  id-token: write   # ⭐ REQUIRED
+  contents: read
+
 jobs:
   terraform:
     runs-on: ubuntu-latest
